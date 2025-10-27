@@ -1,0 +1,92 @@
+/* Definição das variáveis de cor (tema marrom) */
+:root {
+    --cor-fundo: #fdf8f2;
+    --marrom-principal: #a87a53;
+    --marrom-escuro: #816247;
+    --texto-claro: #ffffff;
+    
+    /* Fontes */
+    --fonte-titulos: 'Playfair Display', serif;
+    --fonte-corpo: 'Inter', sans-serif;
+    --mainNavFont: 'Inter', sans-serif; /* <-- ADICIONADO */
+}
+
+body.variaveis {
+    /* background-color: var(--cor-fundo); */
+    background-color: #e5dbd0;
+    font-family: var(--fonte-corpo);
+    color: var(--marrom-escuro);
+}
+
+.sombra {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-height: 70px;
+}
+
+/* Estilização da Navbar */
+nav.variaveis {
+    background-color: var(--marrom-principal);
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+/* ======================================================= */
+/* ESTILOS DOS LINKS DO MENU (ATUALIZADO COM SEU CÓDIGO)   */
+/* ======================================================= */
+.navbar .nav-link {
+    color: var(--texto-claro);
+    font-family: var(--mainNavFont);
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0.45rem 0.8rem;
+    border-radius: 8px;
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #fff;
+    background-color: var(--marrom-escuro);
+}
+
+/* Cor do ícone do menu sanduíche */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Estilização do Botão "Encomendar" */
+.btn-customPrimary {
+    background-color: var(--marrom-escuro);
+    border-color: var(--marrom-escuro);
+    color: var(--texto-claro);
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-customPrimary:hover {
+    background-color: #3e2723;
+    border-color: #3e2723;
+    color: var(--texto-claro);
+    transform: translateY(-2px);
+}
+
+/* ======================================================= */
+/* CÓDIGO PARA POSICIONAR A LOGO                           */
+/* ======================================================= */
+@media (min-width: 900px) {
+    .navbar-brand {
+        position: absolute;
+        left: 8%;
+        transform: translateX(-50%);
+    }
+}
