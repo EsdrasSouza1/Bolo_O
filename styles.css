@@ -90,3 +90,15 @@ nav.variaveis {
         transform: translateX(-50%);
     }
 }
+
+.imagem-esquerda {
+  float: left; /* Manda a imagem flutuar para a esquerda */
+  width: 300px; /* Defina um tamanho */
+  margin-right: 20px; /* Dá um espaço para o texto não colar nela */
+  margin-bottom: 10px; /* Espaço embaixo */
+}
+
+#orderBtn {
+  font-size: 1.25rem; /* Aumenta o tamanho da fonte */
+  padding: 0.75rem 1.25rem; /* Aumenta o "espaçamento interno" do botão */
+}
