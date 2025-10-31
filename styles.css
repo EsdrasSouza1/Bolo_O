@@ -119,6 +119,7 @@ footer {
   padding: 15px 0;
   margin-top: auto; /* Garante que o rodapé vá pro fim */
 }
+/* Config carrosel */
 .carousel-container {
   max-width: 900px;     /* largura máxima do carrossel */
   margin: 40px auto;    /* centraliza na tela */
