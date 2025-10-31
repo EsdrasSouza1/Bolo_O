@@ -119,4 +119,17 @@ footer {
   padding: 15px 0;
   margin-top: auto; /* Garante que o rodapé vá pro fim */
 }
+.carousel-container {
+  max-width: 900px;     /* largura máxima do carrossel */
+  margin: 40px auto;    /* centraliza na tela */
+  border-radius: 12px;  /* cantos arredondados */
+  overflow: hidden;     /* esconde bordas das imagens */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* sombra suave */
+}
+
+.carousel-item img {
+  width: 100%;          /* imagem se ajusta à largura do container */
+  height: auto;         /* mantém proporção */
+  object-fit: cover;    /* corta se necessário pra preencher bem */
+}
 
