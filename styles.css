@@ -1,9 +1,7 @@
-/* ================================
-   VARIÁVEIS DE COR E FONTES
-================================= */
+/* VARIÁVEIS */
 :root {
   --cor-fundo: #fdf8f2;
-  --marrom-principal: #a87a53;
+  --marrom-principal: #A87A53;
   --marrom-escuro: #816247;
   --texto-claro: #ffffff;
   --fonte-titulos: 'Playfair Display', serif;
@@ -11,9 +9,6 @@
   --mainNavFont: 'Inter', sans-serif;
 }
 
-/* ================================
-   ESTRUTURA BASE
-================================= */
 html, body {
   height: 100%;
 }
@@ -26,9 +21,7 @@ body.variaveis {
   flex-direction: column;
 }
 
-/* ================================
-   NAVBAR
-================================= */
+/* NAVBAR */
 .sombra {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -56,69 +49,84 @@ nav.variaveis {
 }
 
 .navbar .nav-link:hover {
+  background-color: rgba(255,255,255,0.18);
   color: #fff;
-  background-color: var(--marrom-escuro);
 }
 
-.navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.2);
+/* COR DO ITEM ATIVO */
+.nav-ativo {
+  background-color: rgba(255,255,255,0.26);
+  font-weight: 600;
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+/* BOTÃO “ENCOMENDAR” DA NAVBAR */
+.btn-encomendar-navbar {
+  background-color: #8a6240;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: .3s;
 }
 
-.btn-customPrimary {
+.btn-encomendar-navbar:hover {
+  background-color: #f2e5d8;
+  transform: translateY(-3px);
+}
+
+/* CARDS PADRÃO */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.card-body {
+  background: #fff;
+}
+
+.card-title {
+  font-family: var(--fonte-titulos);
+  font-size: 1.3rem;
+  color: var(--marrom-escuro);
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+}
+
+/* BOTÃO COMPRAR NOS CARDS */
+.btn-primary {
   background-color: var(--marrom-escuro);
   border-color: var(--marrom-escuro);
-  color: var(--texto-claro);
-  font-weight: 600;
-  padding: 8px 20px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 8px;
 }
 
-.btn-customPrimary:hover {
-  background-color: #3e2723;
-  border-color: hsl(9, 28%, 19%);
-  color: var(--texto-claro);
-  transform: translateY(-2px);
+.btn-primary:hover {
+  background-color: #a87a53;
 }
 
-/* Logo posicionada à esquerda em telas grandes */
-@media (min-width: 900px) {
-  .navbar-brand {
-    position: absolute;
-    left: 8%;
-    transform: translateX(-50%);
-  }
-}
-
-/* ================================
-   IMAGENS / ELEMENTOS
-================================= */
-.imagem-esquerda {
-  float: left;
-  width: 300px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-}
-
-#orderBtn {
-  font-size: 1.25rem;
-  padding: 0.75rem 1.25rem;
-}
-
-/* ================================
-   RODAPÉ
-================================= */
+/* RODAPÉ */
 footer {
-  background-color: #3e2723;
+  background-color: #a87a53;
   color: white;
   text-align: center;
   padding: 15px 0;
-  margin-top: auto; /* Garante que o rodapé vá pro fim */
+  margin-top: auto;
 }
+
+
 /* Config carrosel */
 .carousel-container {
   max-width: 900px;     /* largura máxima do carrossel */
@@ -133,4 +141,52 @@ footer {
   height: auto;         /* mantém proporção */
   object-fit: cover;    /* corta se necessário pra preencher bem */
 }
+
+/* ------------------ */
+/*     CONTATO        */
+/* ------------------ */
+
+.conteudo-contato {
+  padding: 40px 0;
+}
+
+.imagem-vovo {
+  max-width: 320px;
+  width: 100%;
+}
+
+.texto-contato {
+  padding-left: 20px;
+}
+
+.titulo-contato {
+  font-family: var(--fonte-titulos);
+  font-size: 2.4rem;
+  color: var(--marrom-escuro);
+  margin-bottom: 15px;
+}
+
+.descricao-contato {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: var(--marrom-escuro);
+}
+
+/* BOTÃO BONITO ENCOMENDAR DA PÁGINA */
+.btn-encomendar {
+  background-color: #8a6240;
+  color: #ffffff;
+  padding: 12px 35px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 40px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-encomendar:hover {
+  background-color: #6d4c34;
+  transform: translateY(-3px);
+}
+
 
