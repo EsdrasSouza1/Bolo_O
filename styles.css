@@ -1,7 +1,8 @@
 /* VARIÁVEIS */
 :root {
   --cor-fundo: #fdf8f2;
-  --marrom-principal: #A87A53;
+  /* --marrom-principal: #A87A53; */
+  --marrom-principal:#748873;
   --marrom-escuro: #816247;
   --texto-claro: #ffffff;
   --fonte-titulos: 'Playfair Display', serif;
@@ -27,7 +28,7 @@ body.variaveis {
 }
 
 .logo {
-  max-height: 70px;
+  max-height: 75px;
 }
 
 nav.variaveis {
@@ -119,7 +120,7 @@ nav.variaveis {
 
 /* RODAPÉ */
 footer {
-  background-color: #a87a53;
+  background-color: #748873;
   color: white;
   text-align: center;
   padding: 15px 0;
