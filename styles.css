@@ -28,13 +28,13 @@ body.variaveis {
 }
 
 .logo {
-  max-height: 90px;
+  max-height: 75px;
 }
 
 nav.variaveis {
   background-color: var(--marrom-principal);
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 .navbar .nav-link {
@@ -44,7 +44,7 @@ nav.variaveis {
   font-weight: 400;
   text-decoration: none;
   padding: 0.45rem 0.8rem;
-  border-radius: 1px;
+  border-radius: 8px;
   margin: 0 5px;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -62,8 +62,8 @@ nav.variaveis {
 
 /* BOTÃO “ENCOMENDAR” DA NAVBAR */
 .btn-encomendar-navbar {
-  background-color: #f7efe6;
-  color: #748873;
+  background-color: #8a6240;
+  color: #ffffff;
   padding: 8px 18px;
   border-radius: 25px;
   font-weight: 600;
