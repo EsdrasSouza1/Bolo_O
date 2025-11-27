@@ -1,4 +1,4 @@
-Bolos da Vovó Ângela
+Bolos da Vovó Ângela - hospedagem: bolovovoangela.rf.gd
 
  Descrição da solução:
 O projeto Bolos da Vovó Ângela foi desenvolvido com o objetivo de digitalizar e ampliar a presença online da marca, facilitando a divulgação de seus produtos
@@ -56,3 +56,4 @@ EsdrasSouza1
 tiago0k
 Ga-neves321
 FabricioxSantana97
+riickhenriick
