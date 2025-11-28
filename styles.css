@@ -190,4 +190,18 @@ footer {
   transform: translateY(-3px);
 }
 
+.img-medium {
+  width: 150%;
+  max-width: 500px;   /* tamanho máximo do quadrado */
+  height: 350px;
+  object-fit: cover;  /* corta sem deformar */
+  border-radius: 12px;
+}
 
+.img-historia-menor {
+  width: 500px;         /* largura desejada */
+  height: 340px;        /* deixa quadrado */
+  object-fit: cover;    /* corta a imagem para caber */
+  border-radius: 12px;
+  float: mid;
+}
